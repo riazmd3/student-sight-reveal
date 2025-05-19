@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
@@ -67,10 +66,16 @@ const AddStudentForm = () => {
     setIsSubmitting(true);
 
     try {
-      // Convert date to string format expected by backend
+      // Ensure all properties are explicitly set to satisfy the Student type
       const studentData: Student = {
-        ...data,
+        Name: data.Name,
+        Reg_No: data.Reg_No,
         DOB: format(data.DOB, "yyyy-MM-dd"),
+        Blood_Group: data.Blood_Group,
+        Phone: data.Phone,
+        Dept: data.Dept,
+        Gender: data.Gender,
+        Bio: data.Bio
       };
 
       // TODO: Handle image upload to backend
