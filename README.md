@@ -1,3 +1,5 @@
+This is a project fully developed by ai (Lovable.ai ) Motive is to test how the ai understands our imagination and how that tranforms that into the visulal application ..
+
 # Welcome to your Lovable project
 
 ## Project info
